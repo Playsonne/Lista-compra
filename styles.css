@@ -1,0 +1,133 @@
+/* styles.css */
+
+/* Reset de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fafafa;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Estilo del contenedor principal */
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 2.5rem; /* Ajustamos el tamaño */
+    color: #8e44ad; /* Morado */
+    text-align: center;
+    margin-bottom: 2px;
+    font-family: 'Pacifico', cursive; /* Nueva fuente */
+}
+
+.subtitle {
+    font-size: 1.5rem; /* Tamaño del texto */
+    color: #8e44ad; /* Morado */
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Pacifico', cursive; /* Misma fuente que el título */
+}
+
+.heart {
+    color: #e74c3c; /* Rojo */
+    font-size: 2rem;
+    vertical-align: down; /* Alinear verticalmente con el texto */
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+}
+
+/* Estilo del input y botón */
+.input-container {
+    display: flex;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+#product-input {
+    flex: 1;
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #BDC3C7;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#product-input:focus {
+    border-color: #2980B9;
+}
+
+button {
+    padding: 12px 18px;
+    background-color: #2980B9;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1D5C73;
+}
+
+/* Estilo de las listas */
+.list-container {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    padding: 12px;
+    margin: 10px 0;
+    background-color: #ecf0f1;
+    border: 1px solid #BDC3C7;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+li:hover {
+    background-color: #bdc3c7;
+    transform: scale(1.05);
+}
+
+li:active {
+    background-color: #dfe6e9;
+    transform: scale(0.98);
+}
+
+/* Cambié los colores de las listas */
+#to-buy-list li {
+    background-color: #a5d6a7; /* Verde claro para productos por comprar */
+}
+
+#bought-list li {
+    background-color: #f9ebae; /* Amarillo claro para productos comprados */
+}
