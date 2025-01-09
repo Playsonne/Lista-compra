@@ -1,4 +1,18 @@
 // script.js
+const firebaseConfig = {
+    apiKey: "tu-apiKey",
+    authDomain: "tu-authDomain",
+    databaseURL: "tu-databaseURL",
+    projectId: "tu-projectId",
+    storageBucket: "tu-storageBucket",
+    messagingSenderId: "tu-messagingSenderId",
+    appId: "tu-appId"
+};
+
+// Inicializar Firebase
+firebase.initializeApp(firebaseConfig);
+const database = firebase.database();
+
 
 // Recupera los productos de localStorage cuando la página se carga
 window.onload = function() {
